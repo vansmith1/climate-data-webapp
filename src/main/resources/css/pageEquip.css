@@ -1,0 +1,230 @@
+/*Andy's pageEquip css*/
+
+.main {
+  margin-left: 120px; /* Same as the width of the sidebar */
+  padding: 2dvh 5dvh;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.header {
+    text-align: left;
+}
+
+/* dataset summary overview */
+.leftContainer {
+  flex: 1;
+  margin-left: 5dvh;
+}
+
+
+.rightContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRight,
+.botRight {
+  flex: 1;
+}
+
+.tableContainer {
+  width: 70dvh;
+  overflow: scroll;
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80dvh;
+}
+
+/*When the time comes, use % for each header of the table, and calculate e.g. 1/(columns) * 100% = (width of parent element)%  */
+th {
+  background-color: #7F8081;
+}
+
+th, td {
+  border: 2px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #b8b8b8;
+}
+
+/* common.css imports */
+* {
+   box-sizing: border-box;
+}
+
+img.top-image {
+   vertical-align: middle;
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+img.signal-image {
+   vertical-align: middle;
+   padding-top: 1px;
+   padding-left: 1060px;
+}
+
+img.i-image {
+   vertical-align: middle;
+   padding-top: 1px;
+}
+
+.topnav {
+   overflow: hidden;
+   background-color: #f2f2f2;
+   height: 50px;
+   border-bottom: 2px solid #000000;
+   position: sticky;
+   top: 0;
+ }
+ 
+ /* Style the topnav links */
+ .topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ /* Change color on hover */
+ .topnav .infoButton:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ /* Style the content */
+ .content {
+   background-color: #ddd;
+   padding: 10px;
+   display: flex;
+   flex-direction: row;
+ }
+
+.footer {
+   margin-left: 120px; /* Same as the width of the sidebar */
+   background-color: #cccccc;
+   padding: 10px;
+ }
+
+body {
+   font-family: Cambria;
+   background: #f1f1f1;
+   margin: 0;
+}
+
+
+
+.sidenav {
+  height: calc(100% - 50px);
+  top: 50px;
+  bottom: 0;
+  width: 120px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  left: 0;
+  background-color: #629AE3; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* or space-evenly */
+
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #000000;
+}
+
+ .sidenav a {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  border-bottom: 2px solid #000000;
+  border-top: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  flex: 1;
+}
+
+ .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+ .sidebarnav a:hover:not(.active) {
+   background-color: #ddd;
+}
+
+/* scrollbar awesomeness*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border: 2px solid black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #818B99;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+::-webkit-scrollbar-button {
+  background: #555; 
+}
+
+/*imported from vanessa for her footer*/
+.footer-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-box {
+  background-color: #CCCCCC;
+  min-width: 350px;
+  padding: 15px;
+  flex: 1;
+  text-align: left;
+  border-radius: 10px; 
+  text-decoration: none;
+  color: black;
+}
+
+.footer-box a {
+  color: black;
+  text-decoration: none;
+}
+
+ .footer-box a:hover {
+  color: #f1f1f1;
+}
+
+.footer-box p {
+  line-height: 1.5; 
+  margin: 0;       
+  padding: 0;    
+}
